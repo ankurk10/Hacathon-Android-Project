@@ -17,16 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.293"
-        app:srcCompat="@drawable/acm_logoo" />
+        app:srcCompat="@drawable/school_hstrans" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/satisfy"
-        android:text="ACM Connect"
-        android:textColor="@color/lightblue"
-        android:textSize="45sp"
+        android:text="School House"
+        android:textColor="@color/black"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
