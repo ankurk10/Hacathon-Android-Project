@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         todo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, OnlineCoursesActivity.class));
+                startActivity(new Intent(MainActivity.this, TodoActivity.class));
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
