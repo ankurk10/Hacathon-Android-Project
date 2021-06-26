@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, login_activity.class));
+                Toast.makeText(MainActivity.this, "Logged Out Successfullly", Toast.LENGTH_SHORT).show();
             }
         });
 
