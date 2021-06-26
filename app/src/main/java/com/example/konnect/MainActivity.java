@@ -35,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
             ObjectAnimator.ofArgb(getWindow(), "statusBarColor", startColor, endColor).start();
         }
 
+        ImageButton log = findViewById(R.id.logout);
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, login_activity.class));
+            }
+        });
+
+
         CardView internship= findViewById(R.id.internship_card);
         internship.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
+
+
+
 
 
 
