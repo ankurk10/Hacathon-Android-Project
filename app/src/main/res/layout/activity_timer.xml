@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,34 +11,96 @@
 
     <Chronometer
         android:id="@+id/chronometer"
-        android:layout_width="250dp"
+        android:layout_width="400dp"
         android:layout_height="200dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/capriola"
         android:textColor="@color/white"
-        android:textSize="60sp" />
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/capriola"
         android:onClick="startChronometer"
-        android:text="Start" />
+        android:text="Start"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:backgroundTint="#3EA31A"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        app:cornerRadius="20dp"
+        app:backgroundTint="#B3C51D"
+        android:textColor="@color/white"
+        android:fontFamily="@font/capriola"
+        android:textSize="20sp"
         android:onClick="pauseChronometer"
-        android:text="Pause" />
+        android:text="Pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
         android:onClick="resetChronometer"
-        android:text="Reset" />
+        android:text="Reset"
+        app:cornerRadius="20dp"
+        app:backgroundTint="#D62C0E"
+        android:textColor="@color/white"
+        android:fontFamily="@font/capriola"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/back_homescreen"
-        android:layout_marginTop="150dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to home screen" />
+        android:layout_marginTop="80dp"
+        android:text="Back to home screen"
+        app:cornerRadius="20dp"
+        app:backgroundTint="#17B8BD"
+        android:textColor="@color/white"
+        android:fontFamily="@font/capriola"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pomodoro Timer"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/capriola"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
